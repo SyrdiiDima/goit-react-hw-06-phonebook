@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import css from './Form.module.css';
@@ -83,9 +83,9 @@ export const Form = ({ onSubmit, contactsName }) => {
   );
 };
 
-Form.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-  contactsName: PropTypes.arrayOf(PropTypes.string.isRequired),
-};
+// Form.propTypes = {
+//   onSubmit: PropTypes.func.isRequired,
+//   contactsName: PropTypes.arrayOf(PropTypes.string.isRequired),
+// };
 
 // export default Form;
