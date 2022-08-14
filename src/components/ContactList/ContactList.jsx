@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import ContactItem from 'components/ContactItem/ContactItem';
 import { deleteContact } from 'redux/contactSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -38,11 +37,3 @@ const ContactList = () => {
 };
 
 export default ContactList;
-
-ContactList.propTypes = {
-  visibleContacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    })
-  ),
-};
