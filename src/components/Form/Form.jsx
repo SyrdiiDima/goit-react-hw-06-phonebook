@@ -33,7 +33,12 @@ export const Form = ({ onSubmit, contactsName }) => {
     };
 
     if (matchName(contacts, contactItem)) {
-      return alert(`${name} is already in contacts`);
+      alert(`${name} is already in contacts`);
+      
+      event.preventDefault();
+      reset();
+      return;
+
     } else {
       event.preventDefault();
       dispatch(addContact(contactItem));
